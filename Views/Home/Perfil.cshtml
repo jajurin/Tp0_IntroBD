@@ -1,12 +1,26 @@
-@model TP0_INTROBD.Integrantes
+@model (TP0_INTROBD.Integrantes Logueado, List<TP0_INTROBD.Integrantes> Equipo)
 
-<h2>Perfil de @Model.Nombre</h2>
+<h2>Perfil de @Model.Logueado.Nombre</h2>
 
 <ul>
-    <li>Email: @Model.Email</li>
-    <li>Fecha de Nacimiento: @Model.FechaNacimiento.ToShortDateString()</li>
-    <li>Domicilio: @Model.Domicilio</li>
-    <li>Género: @Model.Genero</li>
+    <li>Email: @Model.Logueado.Email</li >
+    <li>Fecha de Nacimiento: @Model.Logueado.FechaNacimiento.ToShortDateString()</li >
+    <li>Domicilio: @Model.Logueado.Domicilio</li >
+    <li>Género: @Model.Logueado.Genero</li >
+    <li>Equipo: @Model.Logueado.Equipo</li >
 </ul>
 
-<a href="/Home/Logout">cerrar sesion</a>
+<h3>Integrantes del mismo equipo</h3>
+
+@foreach(var integrante in Model.Equipo)
+{
+    <div>
+        <p>Nombre: @integrante.Nombre</p>
+        <p>Email: @integrante.Email</p>
+        <p>Fecha de Nacimiento: @integrante.FechaNacimiento.ToShortDateString()</p>
+        <p>Domicilio: @integrante.Domicilio</p>
+        <p>Género: @integrante.Genero</p>
+        <p>Equipo: @integrante.Equipo</p>
+    </div>
+}
+<a href="/Home/Login">Cerrar Sesion</a>

@@ -22,6 +22,8 @@ public string Domicilio {get; set; }
 [JsonProperty]
 
 public string Genero {get; set; }
+[JsonProperty]
+public int Equipo{get; set; }
 
 
 

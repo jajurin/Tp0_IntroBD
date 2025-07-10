@@ -40,33 +40,38 @@ namespace TP0_INTROBD.Controllers
             return View();
         }
 
-        public IActionResult Perfil()
-        {
-    
-            string Texto = HttpContext.Session.GetString("IdIntegrante");
+       public IActionResult Perfil()
+{
+    string Id = HttpContext.Session.GetString("IdIntegrante");
+    if (string.IsNullOrEmpty(Id))
+        return RedirectToAction("Login");
 
-            if (string.IsNullOrEmpty(Texto))
-            {
-                return RedirectToAction("Login");
-            }
+    int id = int.Parse(Id);
 
-            
-            int id = int.Parse(Texto);
+     Integrantes logueado = null;
+     foreach (var integrante in bd.Integrantes())
+   {
+    if (integrante.IdIntegrantes == id)
+    {
+        logueado = integrante;
+    }
+   }
 
-            List<Integrantes> integrantes = bd.Integrantes();
-            Integrantes logueado = null;
+if (logueado == null)
+    return RedirectToAction("Login");
 
-            foreach (Integrantes i in integrantes)
-            {
-                if (i.IdIntegrantes == id)
-                {
-                    logueado = i;
-                    
-                }
-            }
+List<Integrantes> equipo = new List<Integrantes>();
+foreach (var integrante in bd.Integrantes())
+{
+    if (integrante.Equipo == logueado.Equipo)
+    {
+        equipo.Add(integrante);
+    }
+}
 
-            return View(logueado);
-        }
+
+    return View((Logueado: logueado, Equipo: equipo));
+}
 
         public IActionResult Index()
         {
@@ -97,7 +102,7 @@ public IActionResult Registro(string nombre, string email, string password, stri
     DateTime fechaNac;
     if (!DateTime.TryParse(fechaNacimiento, out fechaNac))
     {
-        fechaNac = DateTime.MinValue; // o date default
+        fechaNac = DateTime.MinValue; 
             }
 
     Integrantes nuevo = new Integrantes
@@ -114,6 +119,10 @@ public IActionResult Registro(string nombre, string email, string password, stri
 
     return RedirectToAction("Login");
 }
+
+
+
+
     }
 
 }
