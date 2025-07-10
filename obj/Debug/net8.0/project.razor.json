@@ -19329,23 +19329,23 @@
   "RootNamespace": "TP0_IntroBD",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\48861075\\Documents\\Tp0_IntroBD\\Views\\Home\\Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\48861075\\Documents\\Tp0_IntroBD\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\48861075\\Documents\\Tp0_IntroBD\\Views\\Perfil.cshtml",
-      "TargetPath": "Views\\Perfil.cshtml",
+      "FilePath": "c:\\Users\\48861075\\Documents\\Tp0_IntroBD\\Views\\Home\\Perfil.cshtml",
+      "TargetPath": "Views\\Home\\Perfil.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\48861075\\Documents\\Tp0_IntroBD\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\48861075\\Documents\\Tp0_IntroBD\\Views\\Login.cshtml",
-      "TargetPath": "Views\\Login.cshtml",
       "FileKind": "mvc"
     },
     {

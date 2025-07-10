@@ -61,6 +61,10 @@ namespace TP0_INTROBD.Controllers
 
             return View(logueado);
         }
+        public IActionResult Index()
+{
+    return RedirectToAction("Login");
+}
 
         public IActionResult Logout()
         {
