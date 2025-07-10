@@ -1,0 +1,12 @@
+@model TP0_INTROBD.Integrantes
+
+<h2>Perfil de @Model.Nombre</h2>
+
+<ul>
+    <li>Email: @Model.Email</li>
+    <li>Fecha de Nacimiento: @Model.FechaNacimiento.ToShortDateString()</li>
+    <li>Domicilio: @Model.Domicilio</li>
+    <li>Género: @Model.Genero</li>
+</ul>
+
+<a asp-action="Logout">Cerrar sesión</a>

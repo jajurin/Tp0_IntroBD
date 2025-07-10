@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\TP0_IntroBD\\TP0_IntroBD.csproj": {}
+    "C:\\Users\\48861075\\Documents\\Tp0_IntroBD\\TP0_IntroBD.csproj": {}
   },
   "projects": {
-    "Z:\\TP0_IntroBD\\TP0_IntroBD.csproj": {
+    "C:\\Users\\48861075\\Documents\\Tp0_IntroBD\\TP0_IntroBD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\TP0_IntroBD\\TP0_IntroBD.csproj",
+        "projectUniqueName": "C:\\Users\\48861075\\Documents\\Tp0_IntroBD\\TP0_IntroBD.csproj",
         "projectName": "TP0_IntroBD",
-        "projectPath": "Z:\\TP0_IntroBD\\TP0_IntroBD.csproj",
+        "projectPath": "C:\\Users\\48861075\\Documents\\Tp0_IntroBD\\TP0_IntroBD.csproj",
         "packagesPath": "C:\\Users\\48861075\\.nuget\\packages\\",
-        "outputPath": "Z:\\TP0_IntroBD\\obj\\",
+        "outputPath": "C:\\Users\\48861075\\Documents\\Tp0_IntroBD\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\48861075\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
