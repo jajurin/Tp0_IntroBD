@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h2>Registrarse</h2>
+
+<form method="post" asp-action="Registro">
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required />
+
+    <label>Email:</label>
+    <input type="email" name="email" required />
+
+    <label>Contraseña:</label>
+    <input type="password" name="password" required />
+
+    <label>Domicilio:</label>
+    <input type="text" name="domicilio" />
+
+    <label>Fecha de Nacimiento:</label>
+    <input type="date" name="fechaNacimiento" />
+
+    <label>Género:</label>
+    <select name="genero">
+        <option value="">Seleccionar</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="otro">otro</option>
+        
+    </select>
+
+    <br />
+    <button type="submit">Crear cuenta</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
