@@ -99,11 +99,6 @@ public IActionResult Registro(string nombre, string email, string password, stri
     }
 
     
-    DateTime fechaNac;
-    if (!DateTime.TryParse(fechaNacimiento, out fechaNac))
-    {
-        fechaNac = DateTime.MinValue; 
-            }
 
     Integrantes nuevo = new Integrantes
     {

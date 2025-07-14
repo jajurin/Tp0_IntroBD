@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP0_IntroBD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d26e316d63e59c04b8cd9027cba32b7a6ea65c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+264c7237055d920260d80b9d68b5fb20ee80a120")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP0_IntroBD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP0_IntroBD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
